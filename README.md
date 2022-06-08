@@ -1,1 +1,1 @@
-# diploma_js_artyom_voitas-
+# diploma_js_artyom_voitas
