@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.sign-in,
+.sign-up {
+    margin: 100px auto 0;
+    width: 400px;
+}
+
+.show {
+    display: block !important;
+}
+
+.text-warning {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+
+
+
