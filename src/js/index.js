@@ -1,3 +1,10 @@
+window.appUsers = [
+    {
+        email: 'art@gmail.com',
+        password: '123456'
+    }
+];
+
 let isUserDataValid = function (form, buttonInForm) {
     if (form.checkValidity() == true) {
         buttonInForm.disabled = false
@@ -16,13 +23,6 @@ let isInputFieldValid = function (inputField, classOfInput) {
     }
 }
 
-window.appUsers = [
-    {
-        email: 'art@gmail.com',
-        password: '123456'
-    }
-];
-
 let isUserExist = function (email) {
     let userEmail = email.value;
     if (Boolean(window.appUsers.find(user => user.email === userEmail))) {
@@ -37,4 +37,11 @@ let loginToAccount = function (email, password) {
         let userPassword = password.value;
         return Boolean(window.appUsers.find(user => user.password === userPassword));
     }
+}
+
+export {
+    isUserDataValid,
+    isInputFieldValid,
+    isUserExist,
+    loginToAccount
 }

@@ -1,3 +1,5 @@
+import { isUserDataValid, isUserExist, isInputFieldValid, loginToAccount } from './index.js';
+
 let signInForm = document.forms['sign-in'];
 let userEmail = signInForm.elements['user-email'];
 let userPassword = signInForm.elements['user-password'];
@@ -20,12 +22,12 @@ signInForm.addEventListener('submit', function (event) {
     let loginMessage = document.querySelector('.log-in')
     loginMessage.classList.remove('show');
     loginMessage.innerHTML = ''
-    if (isUserExist(userEmail) == false) {
+    if (isUserExist(userEmail) === false) {
         let warning = document.querySelector('.text-warning');
         warning.innerHTML = "A user with such email address does not exist";
         warning.classList.add('show')
     } else  {
-        if (loginToAccount(userEmail, userPassword) == true) {
+        if (loginToAccount(userEmail, userPassword) === true) {
             loginMessage.classList.remove('text-warning')
             loginMessage.innerHTML = 'You are successfully logged in!'
             loginMessage.classList.add('show');
