@@ -20,18 +20,18 @@
   <script src="./libs/js/bootstrap.js"></script>
 </head>
 <body>
-<header>
+<header class="container justify-content-center">
   <a href="#">
     <img class="logo" src="./assets/imgs/logo.png" alt="Logo img">
   </a>
 </header>
 
-<main>
+<main class="container">
   <div class="d-flex flex-column align-items-center">
     <form name="sign-up" class="sign-up">
       <div class="mb-3  input-email">
-        <label for="InputEmail" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="InputEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        <label for="inputEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                placeholder="Enter your email" aria-describedby="emailHelp" name="new-user-email" required>
         <div class="text-warning">
           The email address is incorrect. Please retry...
@@ -39,16 +39,16 @@
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
       <div class="mb-3 input-password">
-        <label for="InputPassword" class="form-label">Password</label>
-        <input type="password" class="form-control" id="InputPassword" pattern=".{6,}"
+        <label for="inputPassword" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword" pattern=".{6,}"
                placeholder="Enter your password" name="new-user-password" required>
         <div class="text-warning">
           The password is incorrect. Please retry...
         </div>
       </div>
       <div class="mb-3 confirm-password">
-        <label for="ConfirmPassword" class="form-label">Confirm Password</label>
-        <input type="password" class="form-control" id="ConfirmPassword" pattern=".{6,}"
+        <label for="confirmPassword" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="confirmPassword" pattern=".{6,}"
                placeholder="Enter your password" name="confirm-password" required>
         <div class="text-warning confirm-password">
           Passwords don't match, repeat again...

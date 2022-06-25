@@ -1,4 +1,4 @@
-import { isUserDataValid, isInputFieldValid, isUserExist } from './index.js'
+import { isFormFilled, isInputFieldValid, isUserExist } from './index.js'
 
 let signUpForm = document.forms['sign-up'];
 let newUserEmail = signUpForm.elements['new-user-email'];
@@ -7,7 +7,7 @@ let newUserConfirmPassword = signUpForm.elements['confirm-password']
 let signUpButton = signUpForm.elements['sign-up-button']
 
 signUpForm.addEventListener('input', function () {
-    isUserDataValid(this, signUpButton)
+    isFormFilled(this, signUpButton)
 });
 
 newUserEmail.addEventListener('change', function () {
@@ -36,6 +36,7 @@ signUpForm.addEventListener('submit', function (event) {
             passwordsDoNotMuch.classList.remove('show');
             window.appUsers.push({email: newUserEmail.value, password: newUserPassword.value})
             registerMessage.innerHTML = 'You are successfully Signed Up!'
+            window.location.replace('./home.html');
         } else {
             passwordsDoNotMuch.classList.add('show');
         }

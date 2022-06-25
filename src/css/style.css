@@ -1,6 +1,53 @@
 header {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    padding-top: 40px;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: deepskyblue;
+    font-weight: 500;
+}
+
+.header-link:hover {
+    color: black;
+}
+
+.header-link.active {
+    color: black;
+    font-weight: 700;
+}
+
+.btn-logout {
+    width: 75px;
+    height: 36px;
+    background-color: deepskyblue;
+    border-radius: 8px;
+}
+
+.btn-logout:hover {
+    border: 1px solid deepskyblue;
+    background-color: white;
+}
+
+.btn-logout .header-link {
+    color: white !important;
+}
+
+.btn-logout:hover .header-link {
+    color: deepskyblue !important;
 }
 
 .logo {

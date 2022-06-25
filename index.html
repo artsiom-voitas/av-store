@@ -20,18 +20,18 @@
   <script src="./libs/js/bootstrap.js"></script>
 </head>
 <body>
-<header>
+<header class="container justify-content-center">
   <a href="#">
     <img class="logo" src="./assets/imgs/logo.png" alt="Logo img">
   </a>
 </header>
 
-<main>
+<main class="container">
   <div class="d-flex flex-column align-items-center">
     <form name="sign-in" class="sign-in">
       <div class="mb-3  input-email">
-        <label for="InputEmail" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="InputEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        <label for="inputEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                placeholder="Enter your email" aria-describedby="emailHelp" name="user-email" required>
         <div class="text-warning">
           The email address is incorrect. Please retry...
@@ -39,8 +39,8 @@
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
       <div class="mb-3 input-password">
-        <label for="InputPassword" class="form-label">Password</label>
-        <input type="password" class="form-control" id="InputPassword" pattern=".{6,}"
+        <label for="inputPassword" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword" pattern=".{6,}"
                placeholder="Enter your password" name="user-password" required>
         <div class="text-warning">
           The password is incorrect. Please retry...
