@@ -1,1 +1,1 @@
-# diploma_js_artyom_voitas
+# AV Store Website
