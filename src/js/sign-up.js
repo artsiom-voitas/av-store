@@ -1,4 +1,4 @@
-import { isFormFilled, isInputFieldValid, isUserExist } from './index.js'
+import { isFormFilled, isInputFieldValid, isUserExist, isUserLoggedIn } from './index.js'
 
 let signUpForm = document.forms['sign-up'];
 let newUserEmail = signUpForm.elements['new-user-email'];
@@ -34,9 +34,10 @@ signUpForm.addEventListener('submit', function (event) {
         if (newUserConfirmPassword.value === newUserPassword.value) {
             registerMessage.classList.add('show');
             passwordsDoNotMuch.classList.remove('show');
-            window.appUsers.push({email: newUserEmail.value, password: newUserPassword.value})
+            window.localStorage.setItem('email', newUserEmail.value)
+            window.localStorage.setItem('password', newUserPassword.value)
             registerMessage.innerHTML = 'You are successfully Signed Up!'
-            window.location.replace('./home.html');
+            window.location.replace('./index.html');
         } else {
             passwordsDoNotMuch.classList.add('show');
         }

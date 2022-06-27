@@ -1,3 +1,6 @@
+import { logout } from './index.js';
+logout()
+
 function initMap() {
     let locations = [
         ['Shop №1', 53.93187753029889, 27.65008890420089, 1],

@@ -22,29 +22,29 @@
 <body>
 <header class="container">
   <img class="logo" src="./assets/imgs/logo.png" alt="Logo img">
-  <ul class="header-links">
+  <ul class="header__links">
     <li>
-      <a href="./home.html" class="header-link">Home</a>
+      <a href="./home.html" class="header__link">Home</a>
     </li>
     <li>
-      <a href="./clients.html" class="header-link">Clients</a>
+      <a href="./clients.html" class="header__link">Clients</a>
     </li>
     <li>
-      <a href="./map.html" class="header-link active">Map</a>
+      <a href="./map.html" class="header__link active">Map</a>
     </li>
     <li class="btn-logout d-flex align-items-center justify-content-center">
-      <a href="index.html" class="header-link">Logout</a>
+      <a class="header__link">Logout</a>
     </li>
   </ul>
 </header>
 
 <main class="container">
   <h1 class="display-6 pb-3">Our Shops locations</h1>
-  <div class="google-map" id="googleMap"></div>
+  <div class="google__map" id="googleMap"></div>
 </main>
 
 
-<script src="./src/js/map.js"></script>
+<script type="module" src="./src/js/map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0O_r8KwaCXYoDbgdT9JToE9Wn8gz6wpY&callback=initMap&v=weekly" defer></script>
 </body>
 </html>

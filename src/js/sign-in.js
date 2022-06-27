@@ -1,4 +1,4 @@
-import { isFormFilled, isUserExist, isInputFieldValid, loginToAccount } from './index.js';
+import { isFormFilled, isUserExist, isInputFieldValid, loginToAccount, isUserLoggedIn } from './index.js';
 
 let signInForm = document.forms['sign-in'];
 let userEmail = signInForm.elements['user-email'];
@@ -39,3 +39,5 @@ signInForm.addEventListener('submit', function (event) {
         }
     }
 })
+
+isUserLoggedIn()

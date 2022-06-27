@@ -19,21 +19,51 @@ let isInputFieldValid = function (inputField, classOfInput) {
     }
 }
 
+let isEmailExistInLocalStorage = function () {
+    return window.localStorage.getItem('email');
+}
+
+let isPasswordExistInLocalStorage = function () {
+    return window.localStorage.getItem('password');
+}
+
 let isUserExist = function (email) {
     let userEmail = email.value;
-    return Boolean(window.appUsers.find(user => user.email === userEmail));
+    if (isEmailExistInLocalStorage() === userEmail) {
+        return true
+    }
 }
 
 let loginToAccount = function (email, password) {
     if (isUserExist(email) === true) {
         let userPassword = password.value;
-        return Boolean(window.appUsers.find(user => user.password === userPassword));
+        if (isPasswordExistInLocalStorage() === userPassword) {
+            return true
+        }
     }
+}
+
+let logout = function () {
+    let logoutButton = document.querySelector('.btn-logout');
+    logoutButton.addEventListener('click', function () {
+        window.localStorage.clear();
+        window.location.replace('./index.html');
+    })
+}
+
+let isUserLoggedIn = function () {
+    setTimeout(function () {
+        if (isEmailExistInLocalStorage() && isPasswordExistInLocalStorage() != null) {
+            window.location.replace('./home.html');
+        }
+    })
 }
 
 export {
     isFormFilled,
     isInputFieldValid,
     isUserExist,
-    loginToAccount
+    loginToAccount,
+    logout,
+    isUserLoggedIn,
 }

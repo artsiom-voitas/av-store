@@ -8,24 +8,25 @@ main {
     padding-top: 40px;
 }
 
-.header-links {
+.header__links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
 
-.header-link {
+.header__link {
     text-decoration: none;
     color: deepskyblue;
     font-weight: 500;
 }
 
-.header-link:hover {
+.header__link:hover {
     color: black;
+    cursor: pointer;
 }
 
-.header-link.active {
+.header__link.active {
     color: black;
     font-weight: 700;
 }
@@ -42,11 +43,11 @@ main {
     background-color: white;
 }
 
-.btn-logout .header-link {
+.btn-logout .header__link {
     color: white !important;
 }
 
-.btn-logout:hover .header-link {
+.btn-logout:hover .header__link {
     color: deepskyblue !important;
 }
 
@@ -55,8 +56,8 @@ main {
     height: 100px;
 }
 
-.sign-in,
-.sign-up {
+.sign__in,
+.sign__up {
     margin: 100px auto 0;
     width: 400px;
 }
