@@ -31,6 +31,7 @@ signInForm.addEventListener('submit', function (event) {
             loginMessage.classList.remove('text-warning')
             loginMessage.innerHTML = 'You are successfully logged in!'
             loginMessage.classList.add('show');
+            window.localStorage.setItem('status', 'logged-in')
             window.location.replace('./home.html');
         } else {
             loginMessage.innerHTML = 'Oops, something wrong with yours email or password!'

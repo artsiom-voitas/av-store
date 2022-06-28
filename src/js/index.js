@@ -53,7 +53,9 @@ let logout = function () {
 
 let isUserLoggedIn = function () {
     setTimeout(function () {
-        if (isEmailExistInLocalStorage() && isPasswordExistInLocalStorage() != null) {
+        let userStatus = window.localStorage.getItem('status')
+        console.log(userStatus)
+        if (userStatus === 'logged-in') {
             window.location.replace('./home.html');
         }
     })
