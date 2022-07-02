@@ -37,8 +37,7 @@ signInForm.addEventListener('submit', function (event) {
             localStorage.setItem('status', 'logged-in')
             setTimeout(() => {
                redirectToHome()
-            }, 1000)
-
+            }, 1000);
         } else {
             loginMessage.innerHTML = 'Oops, something wrong with yours email or password!'
             loginMessage.classList.add('text-warning');

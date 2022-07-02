@@ -1,41 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c68dd19c-b4c8-4d0f-865f-047cb9ceab30" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/android-chrome-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/browserconfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/mstile-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/safari-pinned-tab.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/site.webmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/imgs/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/css/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign-up.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/clients.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_clients.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/map.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_map.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/sign-in.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_sign-in.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/sign-up.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_sign-up.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/clients.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/clients.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/map.js" afterDir="false" />
+    <list default="true" id="c68dd19c-b4c8-4d0f-865f-047cb9ceab30" name="Changes" comment="feat: project moved to webpack&#10;&#10;-project is assembled on webpack&#10;-added scss&#10;-added pug&#10;-fixed naming of some functions">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/signIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/signIn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/sign-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/sign-in.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/sign-up.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/sign-up.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +74,16 @@
       <workItem from="1656673628426" duration="1168000" />
       <workItem from="1656712291701" duration="1311000" />
       <workItem from="1656746139365" duration="19864000" />
-      <workItem from="1656768833943" duration="8933000" />
+      <workItem from="1656768833943" duration="9656000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: project moved to webpack&#10;&#10;-project is assembled on webpack&#10;-added scss&#10;-added pug&#10;-fixed naming of some functions">
+      <created>1656782465596</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656782465596</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,5 +99,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: project moved to webpack&#10;&#10;-project is assembled on webpack&#10;-added scss&#10;-added pug&#10;-fixed naming of some functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: project moved to webpack&#10;&#10;-project is assembled on webpack&#10;-added scss&#10;-added pug&#10;-fixed naming of some functions" />
   </component>
 </project>

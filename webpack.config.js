@@ -11,8 +11,8 @@ module.exports = {
     entry: {
         main: './src/index.js',
         utils: './src/js/utils.js',
-        signIn: './src/js/sign-in.js',
-        signUp: './src/js/sign-up.js',
+        'sign-in': './src/js/sign-in.js',
+        'sign-up': './src/js/sign-up.js',
         home: './src/js/home.js',
         clients: './src/js/clients.js',
         map: './src/js/map.js',
