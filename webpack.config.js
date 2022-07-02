@@ -33,12 +33,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.pug',
-            chunks: ["main", "utils", "signIn"],
+            chunks: ["main", "utils", "sign-in"],
         }),
         new HtmlWebpackPlugin({
             filename: 'sign-up.html',
             template: './src/pug/sign-up.pug',
-            chunks: ["main", "utils", "signUp"],
+            chunks: ["main", "utils", "sign-up"],
         }),
         new HtmlWebpackPlugin({
             filename: 'home.html',
