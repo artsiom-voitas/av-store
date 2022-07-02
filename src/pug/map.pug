@@ -1,0 +1,21 @@
+include libs/libs
+
+doctype html
+html(lang='en')
+  +head('Shops Map | AV')
+header.container
+  img.logo(src=require('../assets/images/logo.png') alt='Logo img')
+  ul.header__links
+    li
+      a.header__link(href='./home.html') Home
+    li
+      a.header__link(href='./clients.html') Clients
+    li
+      a.header__link.active(href='./map.html') Map
+    li.btn-logout.d-flex.align-items-center.justify-content-center
+      a.header__link Logout
+main.container
+  h1.display-6.pb-3 Our Shops locations
+  #googleMap.google__map
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA0O_r8KwaCXYoDbgdT9JToE9Wn8gz6wpY&callback=initMap&v=weekly' defer='')
+

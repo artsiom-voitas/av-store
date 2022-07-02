@@ -1,0 +1,13 @@
+mixin header(active)
+  header.container
+    +image('logo.png', 'logo')
+    //img.logo(src=require('../../assets/images/logo.png') alt='Logo img')
+    ul.header__links
+      li
+        a.header__link.active(href='./home.html') Home
+      li
+        a.header__link(href='./clients.html') Clients
+      li
+        a.header__link(href='./map.html') Map
+      li.btn-logout.d-flex.align-items-center.justify-content-center
+        a.header__link Logout

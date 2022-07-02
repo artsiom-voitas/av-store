@@ -1,4 +1,4 @@
-import { logout } from './index.js';
+import { logout } from './utils.js';
 logout()
 
 const welcomeMessage = document.querySelector('.welcome__message')

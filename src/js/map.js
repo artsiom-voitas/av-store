@@ -1,4 +1,4 @@
-import { logout } from './index.js';
+import { logout } from './utils.js';
 logout()
 
 function initMap() {

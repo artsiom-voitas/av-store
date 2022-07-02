@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c68dd19c-b4c8-4d0f-865f-047cb9ceab30" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/mstile-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/safari-pinned-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgs/icons/site.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgs/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign-up.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/clients.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_clients.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/map.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_map.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/sign-in.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_sign-in.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/sign-up.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_sign-up.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/clients.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/clients.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/sign-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/sign-in.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/sign-up.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/sign-up.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+        <option value="Pug File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BDL8zdVgD5CJuHBEpSRWBK2c3w" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Lomray/WingStudioRepository/frontend&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Frontend\JS\AV-Store\src\pug\libs" />
+      <recent name="D:\Frontend\JS\AV-Store\src\pug" />
+      <recent name="D:\Frontend\JS\AV-Store\src\pug\components" />
+      <recent name="D:\Frontend\JS\AV-Store\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c68dd19c-b4c8-4d0f-865f-047cb9ceab30" name="Changes" comment="" />
+      <created>1656435557225</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656435557225</updated>
+      <workItem from="1656435561941" duration="162000" />
+      <workItem from="1656435744793" duration="1048000" />
+      <workItem from="1656489416061" duration="605000" />
+      <workItem from="1656673628426" duration="1168000" />
+      <workItem from="1656712291701" duration="1311000" />
+      <workItem from="1656746139365" duration="19864000" />
+      <workItem from="1656768833943" duration="8933000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,3 +1,4 @@
 /.idea/modules.xml
 /.idea/.gitignore
-/.idea/diploma_js_artyom_voitas.iml
+/.idea/AV-Store.iml
+/node_modules

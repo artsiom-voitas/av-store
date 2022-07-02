@@ -1,0 +1,17 @@
+include libs/libs
+
+doctype html
+html(lang='en')
+  +head('Clients | AV')
+
+header.container
+  img.logo(src=require('../assets/images/logo.png') alt='Logo img')
+  ul.header__links
+    li
+      a.header__link(href='./home.html') Home
+    li
+      a.header__link.active(href='./clients.html') Clients
+    li
+      a.header__link(href='./map.html') Map
+    li.btn-logout.d-flex.align-items-center.justify-content-center
+      a.header__link Logout
