@@ -1,10 +1,3 @@
-window.appUsers = [
-    {
-        email: 'art@gmail.com',
-        password: '123456'
-    }
-];
-
 let disableFormButton = function (form, buttonInForm) {
     buttonInForm.disabled = !form.checkValidity();
 }
@@ -19,51 +12,68 @@ let toggleInputWarning = function (inputField, selector) {
     }
 }
 
-let isEmailExistInLocalStorage = function () {
-    return localStorage.getItem('email');
+const userList = function () {
+    return JSON.parse(localStorage.getItem('users'));
 }
 
-let isPasswordExistInLocalStorage = function () {
-    return localStorage.getItem('password');
-}
-
-let isUserExist = function (emailValue) {
-        return isEmailExistInLocalStorage() === emailValue;
+const userFinder = function (emailValue) {
+    let users = userList();
+    let user = users.findIndex(user => user.email === emailValue);
+    if (user === -1) {
+        return -1
+    } else {
+        return users[user];
+    }
 }
 
 let checkUserData = function (emailValue, passwordValue) {
-    if (isUserExist(emailValue) === true) {
-        return isPasswordExistInLocalStorage() === passwordValue;
+    let user = userFinder(emailValue);
+    if (user !== -1) {
+        return user['password'] === passwordValue;
     }
 }
 
 let logout = function () {
     let logoutButton = document.querySelector('.btn-logout');
     logoutButton.addEventListener('click', function () {
-        localStorage.clear();
-        window.location.replace('./index.html');
+        localStorage.removeItem('active-user');
+        redirectToLogin()
     })
 }
 
-let isUserLoggedIn = function () {
+let unauthorizedUserCheck = function () {
     setTimeout(function () {
-        let userStatus = localStorage.getItem('status')
-        if (userStatus === 'logged-in') {
-            redirectToHome();
+        let status = localStorage.getItem('active-user')
+        if (status === null) {
+            redirectToLogin()
         }
-    }, 0)
+    }, 1)
+}
+
+let authorizedUserCheck = function () {
+    setTimeout(function () {
+        let status = localStorage.getItem('active-user')
+        if (status !== null) {
+            redirectToHome()
+        }
+    }, 1)
 }
 
 let redirectToHome = function () {
     window.location.replace('./home.html')
 }
 
+let redirectToLogin = function () {
+    window.location.replace('./index.html')
+}
+
 export {
     disableFormButton,
     toggleInputWarning,
-    isUserExist,
     checkUserData,
+    userFinder,
     logout,
-    isUserLoggedIn,
+    unauthorizedUserCheck,
+    authorizedUserCheck,
     redirectToHome
 }

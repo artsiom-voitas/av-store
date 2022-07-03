@@ -1,4 +1,4 @@
-import { disableFormButton, isUserExist, toggleInputWarning, checkUserData, isUserLoggedIn, redirectToHome } from './utils.js';
+import { disableFormButton, userFinder, toggleInputWarning, checkUserData, authorizedUserCheck, redirectToHome } from './utils.js';
 
 let signInForm = document.forms['sign-in'];
 let userEmail = signInForm.elements['user-email'];
@@ -24,8 +24,7 @@ signInForm.addEventListener('submit', function (event) {
     loginMessage.innerHTML = ''
     let userEmailValue = userEmail.value;
     let userPasswordValue = userPassword.value;
-    console.log(userEmailValue)
-    if (!isUserExist(userEmailValue)) {
+    if (!userFinder(userEmailValue)) {
         let warning = document.querySelector('.text-warning');
         warning.innerHTML = "A user with such email address does not exist";
         warning.classList.add('show')
@@ -34,7 +33,7 @@ signInForm.addEventListener('submit', function (event) {
             loginMessage.classList.remove('text-warning')
             loginMessage.innerHTML = 'You are successfully logged in!'
             loginMessage.classList.add('show');
-            localStorage.setItem('status', 'logged-in')
+            localStorage.setItem('active-user', userEmailValue)
             setTimeout(() => {
                redirectToHome()
             }, 1000);
@@ -46,4 +45,4 @@ signInForm.addEventListener('submit', function (event) {
     }
 })
 
-isUserLoggedIn()
+authorizedUserCheck()

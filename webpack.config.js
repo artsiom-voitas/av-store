@@ -22,7 +22,7 @@ module.exports = {
         assetModuleFilename: 'assets/[hash][ext][query]',
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
-        clean: true
+        clean: false
     },
     devtool: 'inline-source-map',
     devServer: {

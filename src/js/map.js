@@ -1,4 +1,7 @@
-import { logout } from './utils.js';
+import {
+    logout,
+    unauthorizedUserCheck,
+} from './utils.js'
 logout()
 
 function initMap() {
@@ -45,3 +48,4 @@ function initMap() {
 
 window.initMap = initMap;
 
+unauthorizedUserCheck()
