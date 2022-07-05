@@ -1,8 +1,50 @@
 th, td {
   border: 1px solid black;
   padding: 8px;
+  font-size: 14px;
 }
 
 thead th {
   width: 15%;
+}
+
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 1em;
+}
+
+.largest__balance {
+  padding: 15px 0;
+}
+
+.go__up {
+  height: 32px;
+  width: 128px;
+  border: none;
+  background-color: deepskyblue;
+  border-radius: 8px;
+  color: white;
+}
+
+.modal {
+  background-color: aliceblue;
+  border-radius: 8px;
+  height: 220px !important;
+  width: 450px !important;
+  top: calc(50% - 110px) !important;
+  left: calc(50% - 225px) !important;
+}
+
+.badge {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: coral;
+  display: flex !important;
+  gap: 20px;
+  align-items: center;
+}
+
+.notification__header {
+  color: black;
 }

@@ -1,3 +1,5 @@
+const body = document.querySelector('body');
+
 let disableFormButton = function (form, buttonInForm) {
     buttonInForm.disabled = !form.checkValidity();
 }
@@ -80,6 +82,48 @@ function formatDate(date) {
     return dd + '.' + mm + '.' + yy;
 }
 
+function getMaxOfArray(numArray) {
+    return Math.max.apply(null, numArray);
+}
+
+function createSpecifiedDomElement(tagName, className, innerHTML) {
+    let domElement = document.createElement(tagName);
+    domElement.classList.add(className);
+    domElement.innerHTML = innerHTML;
+    return domElement
+}
+
+function createConfirmationModal() {
+    let modal = createSpecifiedDomElement('div', 'modal', '');
+    let modalHeader = createSpecifiedDomElement('h4', 'modal-header', 'Confirmation', '');
+    let modalBody = createSpecifiedDomElement('p', 'modal-body', 'Are you sure you want to delete?')
+    let modalFooter = createSpecifiedDomElement('div', 'modal-footer', '');
+    let deleteButton = createSpecifiedDomElement('button', 'btn', 'Delete');
+    deleteButton.classList.add('btn-danger', 'btn__delete')
+    let cancelButton = createSpecifiedDomElement('button', 'btn', 'Cancel');
+    cancelButton.classList.add('btn-secondary', 'btn__cancel');
+    modal.append(modalHeader);
+    modal.append(modalBody);
+    modal.append(modalFooter);
+    modalFooter.append(deleteButton);
+    modalFooter.append(cancelButton)
+    body.append(modal)
+}
+
+function notification(text) {
+    let windowNotification = document.createElement('div');
+    windowNotification.classList.add('badge');
+    let notificationHeader = createSpecifiedDomElement('h4', 'notification__header', text);
+    windowNotification.append(notificationHeader);
+    let closeNotification = document.createElement('button');
+    windowNotification.append(closeNotification)
+    closeNotification.classList.add('btn', 'btn-close');
+    closeNotification.addEventListener('click', function () {
+        windowNotification.remove();
+    })
+    body.append(windowNotification)
+}
+
 export {
     disableFormButton,
     toggleInputWarning,
@@ -89,5 +133,9 @@ export {
     unauthorizedUserCheck,
     authorizedUserCheck,
     redirectToHome,
-    formatDate
+    formatDate,
+    getMaxOfArray,
+    createSpecifiedDomElement,
+    createConfirmationModal,
+    notification
 }
