@@ -10,12 +10,16 @@ module.exports = {
     mode: 'development',
     entry: {
         main: './src/index.js',
+        auth: './src/js/auth/auth.js',
+        'website-auth': './src/js/auth/website-auth.js',
+        'pages-auth': './src/js/auth/pages-auth.js',
         utils: './src/js/utils.js',
         'sign-in': './src/js/sign-in.js',
         'sign-up': './src/js/sign-up.js',
         home: './src/js/home.js',
         clients: './src/js/clients.js',
         map: './src/js/map.js',
+        header: './src/js/header.js'
 
     },
     output: {
@@ -33,27 +37,27 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.pug',
-            chunks: ["main", "utils", "sign-in"],
+            chunks: ["main", "auth", "website-auth", "utils", "sign-in"],
         }),
         new HtmlWebpackPlugin({
             filename: 'sign-up.html',
             template: './src/pug/sign-up.pug',
-            chunks: ["main", "utils", "sign-up"],
+            chunks: ["main", "auth", "website-auth", "utils", "sign-up"],
         }),
         new HtmlWebpackPlugin({
             filename: 'home.html',
             template: './src/pug/home.pug',
-            chunks: ["main", "utils", "home"],
+            chunks: ["main", "auth", "pages-auth", "utils", "home", "header"],
         }),
         new HtmlWebpackPlugin({
             filename: 'clients.html',
             template: './src/pug/clients.pug',
-            chunks: ["main", "utils", "clients"],
+            chunks: ["main", "auth", "pages-auth", "utils", "clients", "header"],
         }),
         new HtmlWebpackPlugin({
             filename: 'map.html',
             template: './src/pug/map.pug',
-            chunks: ["main", "utils", "map"],
+            chunks: ["main", "auth", "pages-auth", "utils", "map", "header"],
         }),
         new MiniCssExtractPlugin( {
             filename: '[name].css'
@@ -115,7 +119,6 @@ module.exports = {
             {
                 test: /\.pug$/,
                 loader: 'pug-loader',
-                exclude: /(node-modules|bower_componennts)/,
             },
         ]
     }

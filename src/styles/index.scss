@@ -5,4 +5,5 @@
 @use 'map';
 @use 'home';
 @use 'clients';
+@import '../../node_modules/reset-css/sass/reset';
 @import "../../node_modules/bootstrap/scss/bootstrap";

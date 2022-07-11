@@ -3,7 +3,7 @@ include libs/libs
 doctype html
 html(lang='en')
   +head('Home | AV')
-header.container
+header.container.d-flex
   img.logo(src=require('../assets/images/logo.png') alt='Logo img')
   ul.header__links
     li
@@ -15,4 +15,4 @@ header.container
     li.btn-logout.d-flex.align-items-center.justify-content-center
       a.header__link Logout
 main.container
-  .welcome__message.m-auto
+  .welcome__message.mx-auto

@@ -5,7 +5,6 @@ body {
 }
 
 header {
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -55,6 +54,7 @@ li {
 .btn-logout:hover {
     border: 1px solid deepskyblue;
     background-color: white;
+    cursor: pointer;
 }
 
 .btn-logout .header__link {

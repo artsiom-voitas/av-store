@@ -1,8 +1,4 @@
-import {
-    logout,
-    unauthorizedUserCheck,
-} from './utils.js'
-logout()
+const mapZoom = 12;
 
 function initMap() {
     let locations = [
@@ -23,29 +19,23 @@ function initMap() {
         ['Shop №15', 53.93864307880945, 27.48552005508541, 15],
     ];
     const map = new google.maps.Map(document.getElementById('googleMap'), {
-        zoom: 12,
+        zoom: mapZoom,
         center: new google.maps.LatLng(53.90089008939261, 27.55758402318272),
     });
 
-    const infowindow = new google.maps.InfoWindow;
+    const infoWindow = new google.maps.InfoWindow();
 
-    let marker, i;
-
-    for (i = 0; i < locations.length; i++) {
+    for (let i = 0, marker; i < locations.length; i++) {
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map
         });
 
-        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            return function() {
-                infowindow.setContent(locations[i][0]);
-                infowindow.open(map, marker);
-            }
-        })(marker, i));
+        google.maps.event.addListener(marker, 'click', (function() {
+                infoWindow.setContent(locations[i][0]);
+                return infoWindow.open(map, marker);
+        }));
     }
 }
 
 window.initMap = initMap;
-
-unauthorizedUserCheck()

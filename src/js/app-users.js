@@ -1,4 +1,9 @@
-appUsers = [
+import {
+    getUsersFromLocalStorage,
+    setUsersToLocalStorage,
+} from './auth/auth'
+
+let appUsers = [
     {
         email: 'art@gmail.com',
         password: '123456'
@@ -9,6 +14,6 @@ appUsers = [
     }
 ];
 
-if (localStorage.getItem('users') === null) {
-    localStorage.setItem('users', JSON.stringify(appUsers))
+if (!getUsersFromLocalStorage()) {
+    setUsersToLocalStorage(appUsers);
 }
