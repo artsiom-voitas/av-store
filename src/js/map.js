@@ -1,4 +1,4 @@
-const mapZoom = 12;
+const zoomScale = 12;
 
 function initMap() {
     let locations = [
@@ -19,7 +19,7 @@ function initMap() {
         ['Shop №15', 53.93864307880945, 27.48552005508541, 15],
     ];
     const map = new google.maps.Map(document.getElementById('googleMap'), {
-        zoom: mapZoom,
+        zoom: zoomScale,
         center: new google.maps.LatLng(53.90089008939261, 27.55758402318272),
     });
 
